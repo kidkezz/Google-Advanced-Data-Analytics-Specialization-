@@ -1,0 +1,46 @@
+# Regression Analysis - Summary of Jupyter Notebooks
+
+## 1. Run Simple Linear Regression
+- **Objective:** Establish a simple linear regression model to analyze the relationship between marketing campaigns and revenue.
+- **Key Tasks:**
+  - Load and explore the dataset.
+  - Visualize relationships using scatter plots.
+  - Fit a simple linear regression model.
+  - Interpret model coefficients and predictions.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`
+
+## 2. Evaluate Simple Linear Regression
+- **Objective:** Assess the performance of the simple linear regression model.
+- **Key Tasks:**
+  - Calculate model accuracy using R-squared and mean squared error.
+  - Check residuals for normality and homoscedasticity.
+  - Interpret model performance.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`
+
+## 3. Perform Multiple Linear Regression
+- **Objective:** Extend regression analysis by incorporating multiple predictor variables.
+- **Key Tasks:**
+  - Build and train a multiple linear regression model.
+  - Evaluate feature importance and model significance.
+  - Assess model performance using adjusted R-squared and residual analysis.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`
+
+## 4. Hypothesis Testing with Python
+- **Objective:** Use statistical tests to validate model assumptions and relationships between variables.
+- **Key Tasks:**
+  - Perform t-tests to compare means.
+  - Conduct ANOVA to analyze variance.
+  - Interpret hypothesis testing results in the context of regression analysis.
+- **Libraries Used:** `scipy.stats`, `pandas`, `numpy`, `seaborn`, `statsmodels`
+
+## 5. Perform Logistic Regression
+- **Objective:** Apply logistic regression to predict categorical outcomes.
+- **Key Tasks:**
+  - Prepare the dataset for classification.
+  - Train a logistic regression model.
+  - Evaluate model accuracy using confusion matrices and ROC curves.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `sklearn`
+
+### Summary
+This project covers fundamental regression techniques, starting with simple linear regression and progressing to multiple regression and logistic regression. The analysis includes model evaluation, hypothesis testing, and performance metrics, ensuring a comprehensive understanding of predictive modeling techniques.
+
