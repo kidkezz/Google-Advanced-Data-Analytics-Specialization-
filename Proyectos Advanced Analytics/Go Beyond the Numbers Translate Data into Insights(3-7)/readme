@@ -1,51 +1,34 @@
- Proyectos Clave del Curso 3
-Habilidades aplicadas: Limpieza de datos, validación, análisis exploratorio (EDA), visualización con Python y Tableau.
+ # Data Preparation and Cleaning - Summary of Jupyter Notebooks
 
-1. Análisis Exploratorio de Empresas Unicornio
-Descubrimiento de patrones en startups valuadas en +$1B
+## 1. Discover What is in Your Dataset
+- **Objective:** Understand the dataset’s structure, identify key variables, and detect initial inconsistencies.
+- **Key Tasks:**
+  - Load the dataset and inspect its contents.
+  - Identify categorical and numerical variables.
+  - Detect missing values and potential outliers.
+  - Generate summary statistics and visualizations for data exploration.
+  - Examine correlations between numerical variables.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib.pyplot`, `seaborn`
 
-Técnicas usadas:
+## 2. Validate and Clean Your Data
+- **Objective:** Ensure data accuracy and reliability by handling inconsistencies and errors.
+- **Key Tasks:**
+  - Check for duplicate records and remove them.
+  - Validate data types and convert them as needed.
+  - Standardize categorical values for consistency.
+  - Detect and correct incorrect or outlier values using visualization techniques.
+  - Apply transformations and scaling for improved data consistency.
+- **Libraries Used:** `pandas`, `numpy`, `seaborn`, `matplotlib.pyplot`, `scipy.stats`
 
-Carga y exploración inicial de datos con pandas.
+## 3. Address Missing Data
+- **Objective:** Handle missing values strategically to maintain data integrity.
+- **Key Tasks:**
+  - Identify and analyze missing data patterns using visualization techniques.
+  - Compare different imputation techniques (mean, median, mode, interpolation, forward/backward fill).
+  - Evaluate the impact of missing data treatment on analysis by comparing distributions before and after imputation.
+- **Libraries Used:** `pandas`, `numpy`, `seaborn`, `matplotlib.pyplot`, `missingno`
 
-Conversión de tipos de datos (ej: fechas a datetime).
-
-Creación de nuevas métricas (años para alcanzar estatus unicornio).
-
-Visualización de relaciones industria vs. tiempo/valuación con matplotlib.
-
-Muestreo aleatorio para análisis focalizado.
+### Summary
+This project focuses on the essential steps for preparing and cleaning datasets, including exploration, validation, and handling missing values. These techniques ensure that data is ready for accurate analysis and modeling. Additionally, visualization techniques are heavily utilized to understand patterns, detect anomalies, and assess the effectiveness of cleaning and imputation methods.
 
 
-2. Validación y Limpieza de Datos
-Preparación de datos para análisis confiable
-
-Logros destacados:
-
-Corrección de errores (ej: años de fundación negativos).
-
-Eliminación de duplicados y estandarización de categorías (industrias).
-
-Codificación de variables categóricas (Label Encoding, One-Hot Encoding).
-
-Creación de variables numéricas para análisis estadístico.
-
-3. Manejo de Valores Faltantes
-Toma de decisiones estratégicas ante datos incompletos
-
-Enfoque:
-
-Identificación de valores nulos en columnas críticas (ej: ciudad, inversores).
-
-Comparación de métodos: eliminación vs. imputación (impacto en % de datos perdidos).
-
-Segmentación de empresas por industria y ubicación para el cliente.
-
-Creación de visualizaciones globales con plotly (mapas de calor por país).
-
-🛠️ Tecnologías Utilizadas
-Librerías de Python: Pandas, NumPy, Matplotlib, Seaborn, Plotly.
-
-Técnicas Avanzadas: Muestreo estratificado, codificación de variables, manejo de outliers.
-
-Principios Clave: Metodología PACE (Planificar, Analizar, Construir, Ejecutar), storytelling con datos.
