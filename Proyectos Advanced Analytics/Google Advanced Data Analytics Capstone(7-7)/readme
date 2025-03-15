@@ -1,0 +1,88 @@
+# Employee Turnover Prediction Project
+
+## 📊 Project Overview
+This project aims to predict employee turnover at Salifort Motors using machine learning. By analyzing HR data, we identify key factors influencing employee retention and provide actionable insights to reduce attrition.
+
+## 🎯 Business Problem
+**Objective:** Predict employees at risk of leaving and determine key drivers of turnover.  
+**Impact:** Reduce hiring costs and improve retention by addressing management issues.
+
+## 📁 Dataset
+**Source:** Synthetic HR data with 14,999 entries (post-deduplication: 11,991 entries).  
+**Features:**
+- `satisfaction_level`
+- `last_evaluation`
+- `number_project`
+- `average_monthly_hours`
+- `tenure` (years at company)
+- `salary` (low/medium/high)
+- 10 other features including department and promotions
+
+## 🔍 Methodology
+
+### 1. Data Cleaning & EDA
+- Removed 3,008 duplicate entries
+- Handled outliers in tenure
+- Created `overworked` feature (employees working >175 hrs/month)
+- Key Insights:
+  - Employees with 6-7 projects had highest turnover (100% left)
+  - Satisfaction levels for retained employees (mean=0.67) vs those who left (mean=0.44)
+  - 93% of employees working 240+ hrs/month left the company
+
+### 2. Feature Engineering
+- Encoded categorical variables (`department`, `salary`)
+- Created binary `overworked` indicator
+- Removed potential leakage features (e.g., `satisfaction_level`)
+
+### 3. Model Building
+**Models Tested:**
+- Logistic Regression (Baseline)
+- Decision Tree
+- Random Forest (Best Performer)
+
+**Final Model Performance (Random Forest):**
+| Metric     | Score |
+|------------|-------|
+| **AUC**    | 0.938 |
+| **F1**     | 0.887 |
+| **Recall** | 0.904 |
+
+## 🔑 Key Findings
+1. **Overwork Crisis:**
+   - Employees working 240-310 hrs/month showed 93% turnover rate
+   - Optimal workload identified as 3-4 projects
+
+2. **Tenure Patterns:**
+   - 4-year tenure employees had unusually low satisfaction
+   - Employees with 6+ years tenure rarely left
+
+3. **Critical Features:**
+   - `last_evaluation` (0.34 importance)
+   - `number_project` (0.34)
+   - `tenure` (0.22)
+   - `overworked` (0.09)
+
+## 💼 Business Recommendations
+1. **Workload Management:**
+   - Cap projects at 5 per employee
+   - Monitor employees exceeding 200 hrs/month
+
+2. **Career Development:**
+   - Implement retention programs for 3-4 year tenure employees
+   - Review promotion policies (only 2% promoted in last 5 years)
+
+3. **Cultural Improvements:**
+   - Address burnout in high-performing teams
+   - Re-evaluate performance metrics tied to overwork
+
+## ⚙️ Technical Implementation
+**Technologies Used:**
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Matplotlib, Seaborn
+
+**How to Run:**
+1. Install dependencies:
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn xgboost
