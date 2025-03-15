@@ -1,69 +1,48 @@
-# 📊 Proyectos Clave del Curso 3
+# Air Quality Analysis - Summary of Jupyter Notebooks
 
-## 🏆 Habilidades aplicadas
-- Limpieza de datos y validación
-- Análisis exploratorio de datos (EDA)
-- Pruebas de hipótesis y estadística inferencial
-- Visualización con Python y Tableau
+## 1. Explore Descriptive Statistics
+- **Objective:** Use descriptive statistics to analyze air quality data with respect to carbon monoxide.
+- **Key Tasks:**
+  - Calculate measures of central tendency and dispersion.
+  - Load and process data from a CSV file.
+  - Summarize key statistics for stakeholder insights.
+- **Libraries Used:** `pandas`, `numpy`
 
----
+## 2. Explore Probability Distributions
+- **Objective:** Identify probability distributions, calculate z-scores, and detect outliers in air quality data.
+- **Key Tasks:**
+  - Determine the best-fitting probability distribution for the data.
+  - Compute z-scores for individual observations.
+  - Identify and interpret outliers.
+- **Libraries Used:** `numpy`, `pandas`, `matplotlib.pyplot`, `statsmodels.api`, `scipy`
 
-## 1️⃣ Análisis Exploratorio de Empresas Unicornio
-**Objetivo:** Descubrimiento de patrones en startups valuadas en más de $1B.
+## 3. Explore Sampling
+- **Objective:** Apply sampling techniques to improve analysis efficiency on large datasets.
+- **Key Tasks:**
+  - Select representative samples from the air quality dataset.
+  - Implement different sampling techniques.
+  - Analyze the impact of sampling on data analysis.
+- **Libraries Used:** `pandas`, `numpy`, `matplotlib`, `statsmodels`, `scipy`
 
-**Técnicas usadas:**
-- Carga y exploración inicial de datos con `pandas`.
-- Conversión de tipos de datos (ej: fechas a `datetime`).
-- Creación de nuevas métricas (años para alcanzar estatus unicornio).
-- Visualización de relaciones industria vs. tiempo/valuación con `matplotlib`.
-- Muestreo aleatorio para análisis focalizado.
+## 4. Explore Confidence Intervals
+- **Objective:** Analyze air quality in different U.S. states and determine which states may be affected by a new federal policy.
+- **Key Tasks:**
+  - Summarize mean AQI for relevant states.
+  - Create a boxplot visualization of AQI using `seaborn`.
+  - Identify states that may be impacted by the policy.
+  - Construct a confidence interval for the state with the highest mean AQI.
+- **Libraries Used:** `pandas`, `numpy`
 
----
+## 5. Explore Hypothesis Testing
+- **Objective:** Conduct hypothesis testing to analyze air quality differences across regions.
+- **Key Tasks:**
+  - Compare AQI between Los Angeles County and the rest of California.
+  - Determine whether New York has a lower AQI than Ohio.
+  - Assess whether Michigan's mean AQI meets a policy threshold.
+- **Methods Used:** Two-sample t-tests (Welch’s t-test, `scipy.stats.ttest_ind(equal_var=False)`).
+- **Libraries Used:** `pandas`, `numpy`, `scipy.stats`
 
-## 2️⃣ Validación y Limpieza de Datos
-**Objetivo:** Preparación de datos para un análisis confiable.
+### Summary
+This project involves statistical analysis of air quality data, including confidence intervals, hypothesis testing, probability distributions, and sampling techniques. The insights gained can be used for policy recommendations and environmental strategies.
 
-**Logros destacados:**
-- Corrección de errores (ej: años de fundación negativos).
-- Eliminación de duplicados y estandarización de categorías (industrias).
-- Codificación de variables categóricas (`Label Encoding`, `One-Hot Encoding`).
-- Creación de variables numéricas para análisis estadístico.
-
----
-
-## 3️⃣ Manejo de Valores Faltantes
-**Objetivo:** Tomar decisiones estratégicas ante datos incompletos.
-
-**Enfoque:**
-- Identificación de valores nulos en columnas críticas (ej: ciudad, inversores).
-- Comparación de métodos: eliminación vs. imputación (impacto en % de datos perdidos).
-- Segmentación de empresas por industria y ubicación para el cliente.
-- Creación de visualizaciones globales con `plotly` (mapas de calor por país).
-
----
-
-## 4️⃣ Exploración de Estadística Descriptiva
-**Objetivo:** Entender distribuciones y medidas clave en los datos.
-
-**Puntos clave:**
-- Cálculo de media, mediana, moda y desviación estándar.
-- Uso de `seaborn` para diagramas de caja y histogramas.
-- Identificación de outliers con el método IQR.
-
----
-
-## 5️⃣ Intervalos de Confianza y Pruebas de Hipótesis
-**Objetivo:** Evaluar afirmaciones sobre los datos con inferencia estadística.
-
-**Métodos usados:**
-- Cálculo de intervalos de confianza con `scipy.stats`.
-- Pruebas t para medias y comparaciones de grupos.
-- Interpretación de valores p y niveles de significancia.
-
----
-
-## 🛠️ Tecnologías Utilizadas
-- **Librerías de Python:** `pandas`, `NumPy`, `Matplotlib`, `Seaborn`, `Plotly`, `SciPy`
-- **Técnicas Avanzadas:** Muestreo estratificado, codificación de variables, manejo de outliers.
-- **Principios Clave:** Metodología PACE (Planificar, Analizar, Construir, Ejecutar), storytelling con datos.
 
