@@ -1,0 +1,46 @@
+Machine Learning Models and Feature Engineering
+Este repositorio contiene una serie de notebooks que cubren técnicas de ingeniería de características y la implementación de varios modelos de machine learning. A continuación, se detalla el contenido de cada notebook en orden de ejecución.
+
+1. Perform Feature Engineering
+Este notebook cubre técnicas de ingeniería de características esenciales para la preparación de datos antes de entrenar modelos de machine learning. Se incluyen:
+
+Manejo de valores nulos y outliers.
+Transformaciones de variables categóricas.
+Creación de nuevas características a partir de datos existentes.
+Escalado y normalización de variables numéricas.
+2. Build a Naive Bayes Model
+Implementación de un modelo de clasificación basado en Naive Bayes. Contiene:
+
+Explicación teórica del algoritmo.
+Preprocesamiento de datos y división en conjuntos de entrenamiento y prueba.
+Implementación del modelo usando sklearn.naive_bayes.
+Evaluación del modelo con métricas como precisión, recall y matriz de confusión.
+3. Build a K-means Model
+Implementación del algoritmo de clustering K-means. Incluye:
+
+Explicación del algoritmo y su aplicación.
+Uso de la técnica del codo para determinar el número óptimo de clusters.
+Entrenamiento del modelo con sklearn.cluster.KMeans.
+Visualización de los clusters en el espacio de características.
+4. Build a Decision Tree Model
+Implementación de un árbol de decisión para clasificación. Contiene:
+
+Explicación teórica del algoritmo.
+Entrenamiento del modelo con sklearn.tree.DecisionTreeClassifier.
+Ajuste de hiperparámetros para evitar el sobreajuste.
+Evaluación del modelo con precisión y matriz de confusión.
+5. Build a Random Forest Model
+Implementación de un modelo de Random Forest para clasificación. Incluye:
+
+Comparación con árboles de decisión individuales.
+Entrenamiento con sklearn.ensemble.RandomForestClassifier.
+Ajuste de hiperparámetros con validación cruzada.
+Evaluación del modelo con métricas de desempeño.
+6. Build an XGBoost Model
+Implementación del modelo XGBoost para clasificación o regresión. Contiene:
+
+Explicación del algoritmo y sus ventajas sobre otros modelos.
+Implementación con xgboost.XGBClassifier.
+Ajuste de hiperparámetros mediante búsqueda en grid.
+Evaluación del modelo y comparación con otros enfoques.
+Cada notebook proporciona ejemplos prácticos con código y visualizaciones para facilitar la comprensión de los conceptos y la implementación de los modelos.
