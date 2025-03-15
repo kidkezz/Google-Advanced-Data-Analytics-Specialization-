@@ -8,6 +8,7 @@ Handling missing values and outliers.
 Transformations of categorical variables.
 Creating new features from existing data.
 Scaling and normalizing numerical variables.
+
 2. Build a Naive Bayes Model
 Implementation of a classification model based on Naive Bayes. It includes:
 
@@ -15,6 +16,7 @@ Theoretical explanation of the algorithm.
 Data preprocessing and splitting into training and testing sets.
 Model implementation using sklearn.naive_bayes.
 Model evaluation with metrics such as precision, recall, and confusion matrix.
+
 3. Build a K-means Model
 Implementation of the K-means clustering algorithm. It includes:
 
@@ -22,6 +24,7 @@ Explanation of the algorithm and its application.
 Using the elbow method to determine the optimal number of clusters.
 Training the model with sklearn.cluster.KMeans.
 Visualization of clusters in the feature space.
+
 4. Build a Decision Tree Model
 Implementation of a decision tree for classification. It includes:
 
@@ -29,6 +32,7 @@ Theoretical explanation of the algorithm.
 Training the model with sklearn.tree.DecisionTreeClassifier.
 Hyperparameter tuning to prevent overfitting.
 Model evaluation using accuracy and confusion matrix.
+
 5. Build a Random Forest Model
 Implementation of a Random Forest model for classification. It includes:
 
@@ -36,6 +40,7 @@ Comparison with individual decision trees.
 Training with sklearn.ensemble.RandomForestClassifier.
 Hyperparameter tuning with cross-validation.
 Model evaluation using performance metrics.
+
 6. Build an XGBoost Model
 Implementation of the XGBoost model for classification or regression. It includes:
 
